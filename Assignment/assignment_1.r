@@ -5,16 +5,8 @@ library(RColorBrewer)
 
 #Sys.setlocale("LC_ALL", "C")
 
-key <- "SOXZUOxa4gnoxqRdzFrGVaycu"
-
-secret<- "kea5IyOeafzBIxWjtITRnUvsqysOkOjDqCo0uqemLPE5cNB0hz"
-
 setwd("~/Workspace/textAnalysisR/")
 
-setup_twitter_oauth(consumer_key=key,
-                    consumer_secret=secret,
-                    access_token = '293529388-hi8m7j2rV29Xfx6enZGysRVX4uYpxRXTbXNl7160',
-                    access_secret ='CZSaBEchRX2z468REazAt0PgFwUfO8BIu4Hs25KtmTNLo')
 
 
 twits<- searchTwitter("#starcraft2", n=2000)
